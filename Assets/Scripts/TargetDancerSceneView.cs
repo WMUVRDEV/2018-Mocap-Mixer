@@ -16,20 +16,25 @@
      public bool followDancer = false;
  
      public Transform focusObject;
- 
-     // Use this for initialization
+
+   void Start()
+    {
+        this.enabled = false;
+    }
 
 
-     // Update is called once per frame
-     void Update () {
+
+    void Update () {
+
+        Debug.Log("Light");
  
          if (followDancer) {
 
              if( SceneView.lastActiveSceneView != null ){
                  transform.LookAt(focusObject);
              }
-    
          }
      }
-     
- }
+
+
+}
