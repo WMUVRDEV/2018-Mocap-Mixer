@@ -2002,10 +2002,13 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114230975218739952, guid: 02dcf92966d976b4ca3207175a1662ab, type: 2}
     value: {fileID: 1828067565}
-  - key: {fileID: 114988539433591724, guid: 02dcf92966d976b4ca3207175a1662ab, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1639648606}
+  - key: {fileID: 114563869459774194, guid: 02dcf92966d976b4ca3207175a1662ab, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - fe118235817acc44fa070b4d16bf9411: {fileID: 1639648603}
 --- !u!4 &557642747
 Transform:
   m_ObjectHideFlags: 0
@@ -2030,7 +2033,7 @@ GameObject:
   m_Layer: 0
   m_Name: Location 2
   m_TagString: loc2
-  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -2074,7 +2077,7 @@ GameObject:
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3232,7 +3235,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpotLight3
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3326,7 +3329,7 @@ GameObject:
   m_Layer: 0
   m_Name: Lights
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3423,7 +3426,7 @@ GameObject:
   m_Layer: 0
   m_Name: Center Loc
   m_TagString: loc1
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -3451,10 +3454,11 @@ GameObject:
   - component: {fileID: 1639648604}
   - component: {fileID: 1639648607}
   - component: {fileID: 1639648606}
+  - component: {fileID: 1639648608}
   m_Layer: 0
   m_Name: SpotLight1
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3501,13 +3505,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1639648603}
-  m_LocalRotation: {x: 0.5663562, y: -0.39634755, z: 0.35744235, w: 0.6280003}
-  m_LocalPosition: {x: 0.31, y: -2.0699997, z: -0.14776805}
+  m_LocalRotation: {x: 0.109656386, y: 0.82797945, z: -0.17404531, w: 0.5216644}
+  m_LocalPosition: {x: -4.2, y: -3.34, z: 2.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1003431798}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 359.4479, y: 359.968, z: 0.2832013}
+  m_LocalEulerAnglesHint: {x: 0.3698019, y: 359.947, z: 0.02337331}
 --- !u!95 &1639648606
 Animator:
   serializedVersion: 3
@@ -3532,13 +3536,31 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1639648603}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ccc9a88279f2b84e93dfb12d497ef4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followDancer: 1
   focusObject: {fileID: 255758617}
+--- !u!320 &1639648608
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1639648603}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7ac6bc189c1156b448f7b5679549852f, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114183168358671026, guid: 7ac6bc189c1156b448f7b5679549852f, type: 2}
+    value: {fileID: 1639648606}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1720959760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,7 +3572,7 @@ GameObject:
   m_Layer: 0
   m_Name: Location 3
   m_TagString: loc3
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
@@ -3666,7 +3688,7 @@ GameObject:
   m_Layer: 0
   m_Name: SpotLight2
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
